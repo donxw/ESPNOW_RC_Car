@@ -51,7 +51,11 @@ AliExpress:
 
 * 9V Li-ion rechargable battery:  https://smile.amazon.com/dp/B086GTFGPP?psc=1&smid=A3P4UZIS42PRQV&ref_=chk_typ_imgToDp
 
-* 9V battery lead snap on connectors
+* 9V battery lead snap on connectors:  https://fr.aliexpress.com/item/4000015248753.html?spm=a2g0o.productlist.0.0.38679564Jqvdul&algo_pvid=80b28aa7-96e6-4de4-bc11-f2a06a7ae6fc&algo_exp_id=80b28aa7-96e6-4de4-bc11-f2a06a7ae6fc-7&pdp_ext_f=%7B%22sku_id%22%3A%2210000000036741911%22%7D&pdp_pi=-1%3B5.69%3B-1%3B-1%40salePrice%3BUSD%3Bsearch-mainSearch
+
+* O-Rings used: 3mm x 70mm ID - https://www.mcmaster.com/o-rings/width~3-000mm/
+
+
 
 ### Remote Control:
 
