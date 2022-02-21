@@ -5,7 +5,7 @@
     Created:	9/26/2021 9:04:11 PM
     Author:     PAVGAMING\willi
 
-    Board:  NodeMCU V1 with NodeMCU Motor Shield
+    Board:  NodeMCU 1.0 (ESP-12E Module)
 
     Wire Motor A to left motor
     Wire Motor B to right motor
