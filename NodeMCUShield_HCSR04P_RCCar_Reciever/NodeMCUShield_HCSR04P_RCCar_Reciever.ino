@@ -1,15 +1,8 @@
-// Visual Micro is in vMicro>General>Tutorial Mode
-//
 /*
-    Name:       NodeMCUMotorShieldTest.ino
-    Created:	9/26/2021 9:04:11 PM
-    Author:     PAVGAMING\willi
-
     Board:  NodeMCU 1.0 (ESP-12E Module)
 
     Wire Motor A to left motor
     Wire Motor B to right motor
-
 */
 
 #include <Arduino.h>
