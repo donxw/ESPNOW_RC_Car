@@ -6,8 +6,6 @@ SMARS inspired RC Car using ESPNOW to transmit signals from the remote control u
 ![SMARS_Front (Small)](https://user-images.githubusercontent.com/31633408/154858401-9d689487-f38e-4935-af7b-f4cb5bdc9f87.JPG)
 ![SMARS_Back (Small)](https://user-images.githubusercontent.com/31633408/154858432-4f8d7abb-6e49-4147-b6e9-5ac400514986.JPG)
 
-
-
 ## Credits
 This project was inspired by the SMARS arduino car described at this website:  https://www.smarsfan.com/ 
 Modifications were made to use and ESP based microcontroller to allow a simple remote control with minimal added hardware.  In addition, the wheels were redesigned to use an o-ring in place of the 3D printed tank treads.
@@ -35,6 +33,8 @@ AliExpress:
 
 ### Remote Control:
 
+![Remote (Small)](https://user-images.githubusercontent.com/31633408/154870419-98e65940-ab3a-4ba7-a9d4-0412f0565f24.JPG)
+
 * Battery Shield - AliExpress:  https://www.aliexpress.com/item/4000770043723.html?spm=a2g0o.order_list.0.0.21ef18023Tfavs
 
 ![BatteryShield (Small)](https://user-images.githubusercontent.com/31633408/154859715-a21fea8a-552e-4508-8b71-5048c8dc13ff.png)
@@ -43,9 +43,7 @@ AliExpress:
 
 ![Joystick](https://user-images.githubusercontent.com/31633408/154859898-225f9219-8ac5-4464-83e6-9c9e899687ce.png)
 
-
-
-ESP32 DevModule
+* ESP32 DevModule
 
 
 
