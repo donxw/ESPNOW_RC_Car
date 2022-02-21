@@ -30,8 +30,8 @@ UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 #define deadBand 20   // Safe range to ignore round midpoint of joystick readings...
 #define FORWARD 1
 #define BACKWARD 2
-#define DEBUG
 #define LEDPIN BUILTIN_LED
+// #define DEBUG
 
 //  Global Variables
 //
@@ -105,44 +105,48 @@ void setup()
   pinMode(DIRB, OUTPUT);
   pinMode(PWMB, OUTPUT);
 
+  // Play tone on power up
   playmelody();
 
   // turn on built in LED
   pinMode(LEDPIN, OUTPUT);
   digitalWrite(LEDPIN, LOW);
-
+    
+#ifdef DEBUG
   // plotter logo
   Serial.print(" ValY ValX Button ");
-
-  //Test
+#endif // DEBUG
+    
+  //test ESPNOW messaging
   //myMessage.valY = 3000;
 }
 
 // Add the main program code into the continuous loop() function
 void loop()
 {
-  // code to handle ultrasonic sensor
+  // ultrasonic sensor
   double distance = distanceSensor.measureDistanceCm();
+  // send sensor readings to serial port 
   //Serial.print("Distance (cm):  "); Serial.println(distance);
+  
+  // take action if object is detected  
   if (distance <= 20) {
     if (distance != -1) {  // ignore bad readings
 
-      // Move backward 1 sec
+      // move backward 1 sec
       digitalWrite(DIRA, CW);  //Left Motor CW for Reverse
       analogWrite(PWMA, maxSpeed);
       digitalWrite(DIRB, CCW);  //Right Motor CCW for Reverse
       analogWrite(PWMB, maxSpeed);
       delay(1000);
 
-      // Tank Turn 180
+      // turn 0.7 sec
       digitalWrite(DIRA, CW);  //Left Motor CW for Reverse
       analogWrite(PWMA, maxSpeed);
       digitalWrite(DIRB, CW);  //Right Motor CCW for Reverse
       analogWrite(PWMB, maxSpeed);
       delay(700);  // adjust until ~180 turn is achieved
-
     }
-
   }
 
   // uncomment define DEBUG to run
@@ -154,6 +158,7 @@ void loop()
     newMessage = false;
   }
 #endif // DEBUG
+    
   // map joystick Y-axis to motor speed (deadband may not be needed since accounted for in sender)
   motorSpeedL = motorSpeedR = 0;
   if (myMessage.valY < (valY_center - deadBand)) {
@@ -168,10 +173,10 @@ void loop()
   // determine speed difference in motors from joystick X-axis value
   speedDiff = 0;
   if (myMessage.valX < valX_center - deadBand) {
-    speedDiff = map(myMessage.valX, 0, valX_center, -maxSpeed / 1, 0);
+    speedDiff = map(myMessage.valX, 0, valX_center, -maxSpeed, 0);
   }
   else if (myMessage.valX > valX_center + deadBand) {
-    speedDiff = map(myMessage.valX, valX_center, full_range, 0, maxSpeed / 1);
+    speedDiff = map(myMessage.valX, valX_center, full_range, 0, maxSpeed);
   }
 
   // set Motor Speeds
