@@ -34,7 +34,7 @@ Code reads the joystick input and sends it to the car.
 
 ### Car Code:  NodeMCUShield_HCSR04P_RCCar_Reciever.ino
 
-Code recieves messages from the ESP32 and sends if forward to the motor driver to control direction and speed.  It also will beep the piezo speaker if the joystick button is pressed.  
+Code recieves messages from the ESP32 and sends if forward to the motor driver to control direction and speed.  It also will beep the piezo speaker if the joystick button is pressed.  If the ultrasonic sensor detects an object in front of it, a routine backs the car up and turns it.
 
 ## Hardware Used
 ### Car:
