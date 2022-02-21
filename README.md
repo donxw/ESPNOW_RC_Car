@@ -44,7 +44,8 @@ Code recieves messages from the ESP32 and sends if forward to the motor driver t
 ## Hardware Used
 ### Car:
 
-* ESP8266 V2.1 dev board / NodeMCU Motor Driver Board for V2
+* ESP8266 V2.1 dev board / NodeMCU Motor Driver Shield for V2
+* Good tutorial for the Shield:  https://hackaday.io/project/8856-incubator-controller/log/29291-node-mcu-motor-shield/
 
 AliExpress:
 
