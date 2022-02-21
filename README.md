@@ -17,12 +17,12 @@ The car uses the ESP8266 commands and the Remote Control uses the ESP32 commands
 No library is needed for the NodeMCU motor driver board.  The motor driver is an L293D as follows:
 
 *Motor A*
-*   Direction A - Pin 0 (D3)
-*   PWM A - Pin 5 (D1)
+*   Direction A - Pin 0 (D3) - Boolean 0 or 1 to change direction
+*   PWM A - Pin 5 (D1) - PWM 0-255 for speed
 
 *Motor B*
-*   Direction B - Pin 2 (D4)
-*   PWM B - Pin 4 (D2)
+*   Direction B - Pin 2 (D4) - Boolean 0 or 1 to change direction
+*   PWM B - Pin 4 (D2) - PWM 0-255 for speed
 
 ## Hardware Used
 ### Car:
