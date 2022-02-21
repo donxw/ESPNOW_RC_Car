@@ -79,8 +79,7 @@ echoPin = 9
 VCC = 3.3V
 
 // Piezo buzzer
-
-
+buzzer = 15
 
 
 MIT License
