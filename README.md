@@ -6,7 +6,8 @@ SMARS inspired RC Car using ESPNOW to transmit signals from the remote control u
 ![SMARS_Front2 (Small)](https://user-images.githubusercontent.com/31633408/154858392-5e5795cd-c237-4288-9b03-29d3a9e27979.JPG)
 
 ![SMARS_Front (Small)](https://user-images.githubusercontent.com/31633408/154858401-9d689487-f38e-4935-af7b-f4cb5bdc9f87.JPG)
-![SMARS_Back (Small)](https://user-images.githubusercontent.com/31633408/154858432-4f8d7abb-6e49-4147-b6e9-5ac400514986.JPG)
+![wiring (Small)](https://user-images.githubusercontent.com/31633408/155016603-536b6cd1-c0bd-4895-ab67-b4dace29a85a.png)
+
 
 ## Credits
 This project was inspired by the SMARS arduino car described at this website:  https://www.smarsfan.com/ 
@@ -87,12 +88,24 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 *Car - ESP8266 NodeMCU V2*
 
 // Ultrasonic sensor
-* trigger = GPIO 10
-* echoPin = GPIO 9
+* trigger = GPIO 10  //SD3
+* echoPin = GPIO 9  //SD2
 * VCC = 3.3V
+* Ground = GND
 
 // Piezo buzzer
-* buzzer = GPIO 15
+* buzzer + = GPIO 15  //D8
+* buzzer - = GND
+
+// 9V battery
+* Positive to Motor Shield Vin (Power to Arduino)
+* Negative to Motor Shield Gnd
+* Jumper VM to VIN (Common Power to Arduino and Motor)
+
+![SMARS_Top](https://user-images.githubusercontent.com/31633408/155014446-86ab87a4-6f71-417b-b213-48ac07698e6a.JPG)
+
+![NodeMCUmotorshield](https://user-images.githubusercontent.com/31633408/155014308-823ba2da-41f3-4c25-80e1-b46128067e5a.jpg)
+![wiring](https://user-images.githubusercontent.com/31633408/155016361-c054e04d-26e8-4b5f-9e44-23a4b1a1fbbe.png)
 
 *RC Unit - ESP32 DevModule*
 
