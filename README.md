@@ -71,6 +71,9 @@ AliExpress:
 
 ![ESP32DevModule (Small)](https://user-images.githubusercontent.com/31633408/154870682-14bb8aa2-2308-4b67-b38d-94db83824840.png)
 
+### Wiring
+
+
 
 
 
