@@ -12,7 +12,7 @@
 
 // Ultrasonic Sensor
 #include <HCSR04.h>
-// Initialize sensor that uses digital pins 9 and 10.  (for Pico use 2,3)
+// Initialize sensor to use digital pins 9 and 10.
 int triggerPin = 10;
 int echoPin = 9;
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
