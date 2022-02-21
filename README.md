@@ -14,7 +14,15 @@ Modifications were made to use and ESP based microcontroller to allow a simple r
 espnow.h - here is the tutorial I used:  https://randomnerdtutorials.com/esp-now-esp8266-nodemcu-arduino-ide/
 The car uses the ESP8266 commands and the Remote Control uses the ESP32 commands
 
-No library is needed for the NodeMCU motor driver board.  
+No library is needed for the NodeMCU motor driver board.  The motor driver is an L293D as follows:
+
+*Motor A*
+*   Direction A - Pin 0 (D3)
+*   PWM A - Pin 5 (D1)
+
+*Motor B*
+*   Direction B - Pin 2 (D4)
+*   PWM B - Pin 4 (D2)
 
 ## Hardware Used
 ### Car:
