@@ -74,12 +74,12 @@ AliExpress:
 ### Wiring
 
 // Ultrasonic sensor that uses digital pins 9 and 10.
-trigger = 10
-echoPin = 9
-VCC = 3.3V
+* trigger = 10
+* echoPin = 9
+* VCC = 3.3V
 
 // Piezo buzzer
-buzzer = 15
+* buzzer = 15
 
 
 MIT License
