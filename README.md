@@ -30,10 +30,12 @@ No library is needed for the NodeMCU motor driver board.  The motor driver is an
 
 ### Remote Control Code: ESP32_Sender_JoystickRemote.ino
 
+Arduino board:  ESP32 Dev Module
 Code reads the joystick input and sends it to the car.
 
 ### Car Code:  NodeMCUShield_HCSR04P_RCCar_Reciever.ino
 
+Arduino board:  NodeMCU 1.0 (ESP-12E Module)
 Code recieves messages from the ESP32 and sends if forward to the motor driver to control direction and speed.  It also will beep the piezo speaker if the joystick button is pressed.  If the ultrasonic sensor detects an object in front of it, a routine backs the car up and turns it.
 
 ## Hardware Used
@@ -76,16 +78,30 @@ AliExpress:
 ![ESP32DevModule (Small)](https://user-images.githubusercontent.com/31633408/154870682-14bb8aa2-2308-4b67-b38d-94db83824840.png)
 
 ### Wiring
+ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 
-// Ultrasonic sensor that uses digital pins 9 and 10.
-* trigger = 10
-* echoPin = 9
+*Car - ESP8266 NodeMCU V2*
+
+// Ultrasonic sensor
+* trigger = GPIO 10
+* echoPin = GPIO 9
 * VCC = 3.3V
 
 // Piezo buzzer
-* buzzer = 15
+* buzzer = GPIO 15
+
+*RC Unit - ESP32 DevModule*
+
+// Joystick
+* Joystick Val Y = GPIO 32
+* Joystick Val X = GPIO 33
+* Joystick Button = GPIO 27
+
+// Battery holder
+* Battery 5v = Vin
 
 
+# 
 MIT License
 
 Copyright (c) 2022 Don Williams
