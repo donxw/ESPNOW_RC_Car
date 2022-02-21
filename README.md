@@ -14,7 +14,7 @@ Modifications were made to use and ESP based microcontroller to allow a simple r
 espnow.h - here is the tutorial I used:  https://randomnerdtutorials.com/esp-now-esp8266-nodemcu-arduino-ide/
 The car uses the ESP8266 commands and the Remote Control uses the ESP32 commands
 
-No library is needed for the NodeMCU motor driver board.  The motor driver is an L293D as follows:
+No library is needed for the NodeMCU motor driver board.  The motor driver is an L293D controlled as follows:
 
 *Motor A*
 *   Direction A - Pin 0 (D3) - Boolean 0 or 1 to change direction
@@ -23,6 +23,16 @@ No library is needed for the NodeMCU motor driver board.  The motor driver is an
 *Motor B*
 *   Direction B - Pin 2 (D4) - Boolean 0 or 1 to change direction
 *   PWM B - Pin 4 (D2) - PWM 0-255 for speed
+
+## Software
+
+### Remote Control Code: ESP32_Sender_JoystickRemote.ino
+
+Code reads the joystick input and sends it to the car.
+
+### Car Code:  NodeMCUShield_HCSR04P_RCCar_Reciever.ino
+
+Code recieves messages from the ESP32 and sends if forward to the motor driver to control direction and speed.  It also will beep the piezo speaker if the joystick button is pressed.  
 
 ## Hardware Used
 ### Car:
