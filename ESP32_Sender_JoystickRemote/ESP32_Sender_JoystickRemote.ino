@@ -16,18 +16,8 @@
 #include <esp_now.h>
 
 //ESP8266 Mac address (first peer)
-//30:83:98:B1:DA:0D Red Car
-//uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB1, 0xDA, 0x0D};
-//30:83:98:B1:CC:43 Red Car 2
-//uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB1, 0xCC, 0x43};
-//30:83:98:B2:76:85 Red Car 3
-//uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB2, 0x76, 0x85};
-//30:83:98:B1:8E:D9 Red Car 4
-//uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB1, 0x8E, 0xD9};
-//30:83:98:B1:BC:DE Red and Black Car
-uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB1, 0xBC, 0xDE};
-//30:83:98:B2:76:85 Red Car 5
-//uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB2, 0x76, 0x85};
+//30:83:98:B1:DA:0D Red Car 1 NodeMCU MAC
+uint8_t mac_peer1[] = {0x30, 0x83, 0x98, 0xB1, 0xDA, 0x0D};
 
 esp_now_peer_info_t peer1;
 
@@ -46,6 +36,7 @@ int deltaY = 0;
 int prev_deltaX = 1000;
 int prev_deltaY = 1000;
 
+// Structured variable to be sent by ESPNOW
 typedef struct message {
   int valX;  // left - right joystick
   int valY;  // fwd - back joystick
@@ -53,7 +44,7 @@ typedef struct message {
 };
 struct message myMessage;
 
-// callback when data is sent
+// Callback when data is sent
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.print("\r\nLast Packet Send Status:\t");
   Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
@@ -74,7 +65,6 @@ void setup() {
     return;
   }
 
-
   memcpy(peer1.peer_addr, mac_peer1, 6);
   peer1.channel = 0;
   // Register the peer
@@ -87,7 +77,6 @@ void setup() {
 
   pinMode(BTN, INPUT_PULLUP);  // joystick button grounds the pin
 }
-
 
 void loop() {
 
@@ -107,8 +96,6 @@ void loop() {
     state = digitalRead(BTN);
     myMessage.button = state;
     esp_now_send(NULL, (uint8_t *) &myMessage, sizeof(myMessage));
-    //    delay(50);
-    //    esp_now_send(NULL, (uint8_t *) &myMessage, sizeof(myMessage));
   }
 
   if (state != digitalRead(BTN)) {
