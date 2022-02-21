@@ -14,6 +14,8 @@ Modifications were made to use and ESP based microcontroller to allow a simple r
 espnow.h - here is the tutorial I used:  https://randomnerdtutorials.com/esp-now-esp8266-nodemcu-arduino-ide/
 The car uses the ESP8266 commands and the Remote Control uses the ESP32 commands
 
+No library is needed for the NodeMCU motor driver board.  
+
 ## Hardware Used
 ### Car:
 
@@ -43,8 +45,9 @@ AliExpress:
 
 ![Joystick](https://user-images.githubusercontent.com/31633408/154859898-225f9219-8ac5-4464-83e6-9c9e899687ce.png)
 
-* ESP32 DevModule
+* ESP32 DevModule - AliExpress:  https://www.aliexpress.com/item/33005643254.html?spm=a2g0o.order_list.0.0.21ef1802H9bZsF
 
+![ESP32DevModule (Small)](https://user-images.githubusercontent.com/31633408/154870682-14bb8aa2-2308-4b67-b38d-94db83824840.png)
 
 
 
