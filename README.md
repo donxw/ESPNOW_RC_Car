@@ -1,6 +1,8 @@
 # ESPNOW_RC_Car
 SMARS inspired RC Car using ESPNOW to transmit signals from the remote control unit.
 
+*Chassis_V2 v5.f3z
+
 ![SMARS_Front2 (Small)](https://user-images.githubusercontent.com/31633408/154858392-5e5795cd-c237-4288-9b03-29d3a9e27979.JPG)
 
 ![SMARS_Front (Small)](https://user-images.githubusercontent.com/31633408/154858401-9d689487-f38e-4935-af7b-f4cb5bdc9f87.JPG)
@@ -52,6 +54,8 @@ AliExpress:
 * 9V battery lead snap on connectors
 
 ### Remote Control:
+
+*NRF_RC_Case_ESP32 v12.f3z
 
 ![Remote (Small)](https://user-images.githubusercontent.com/31633408/154870419-98e65940-ab3a-4ba7-a9d4-0412f0565f24.JPG)
 
