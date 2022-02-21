@@ -10,7 +10,10 @@ SMARS inspired RC Car using ESPNOW to transmit signals from the remote control u
 
 ## Credits
 This project was inspired by the SMARS arduino car described at this website:  https://www.smarsfan.com/ 
-Modifications were made to use and ESP based microcontroller to allow a simple remote control with minimal added hardware.  In addition, the wheels were redesigned to use an o-ring in place of the 3D printed tank treads.
+
+Modifications were made to use ESP based microcontrollers for RC wireless signal communication using the ESPNOW protocol. This minimized any addtional hardware by using the built in wireless capabilities of the ESP boards.  
+
+Additionally, the wheels were redesigned to use an o-ring in place of the 3D printed tank treads.
 
 ## Libraries Used
 espnow.h - here is the tutorial I used:  https://randomnerdtutorials.com/esp-now-esp8266-nodemcu-arduino-ide/
