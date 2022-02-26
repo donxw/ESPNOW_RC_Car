@@ -61,6 +61,7 @@ AliExpress:
 * 9V battery lead snap on connectors:  https://fr.aliexpress.com/item/4000015248753.html?spm=a2g0o.productlist.0.0.38679564Jqvdul&algo_pvid=80b28aa7-96e6-4de4-bc11-f2a06a7ae6fc&algo_exp_id=80b28aa7-96e6-4de4-bc11-f2a06a7ae6fc-7&pdp_ext_f=%7B%22sku_id%22%3A%2210000000036741911%22%7D&pdp_pi=-1%3B5.69%3B-1%3B-1%40salePrice%3BUSD%3Bsearch-mainSearch
 
 * O-Rings used: 3mm x 70mm ID - https://www.mcmaster.com/o-rings/width~3-000mm/
+* Ultrasonic Sensor:  HC-SR04P 3.3-5v version - https://www.aliexpress.com/item/1893557869.html?spm=a2g0o.productlist.0.0.41fb7eb4Qc5DIU&algo_pvid=9188cb53-b11d-4924-a6ab-ea4a412cd662&algo_exp_id=9188cb53-b11d-4924-a6ab-ea4a412cd662-0&pdp_ext_f=%7B%22sku_id%22%3A%2256091531014%22%7D&pdp_pi=-1%3B0.49%3B-1%3B-1%40salePrice%3BUSD%3Bsearch-mainSearch
 
 
 
