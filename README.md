@@ -99,7 +99,7 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 // 9V battery
 * Positive to Motor Shield Vin (Power to Arduino)
 * Negative to Motor Shield Gnd
-* Jumper VM to VIN (Common Power to Arduino and Motor)
+* Jumper VM to VIN (Common Power to NodeMCU and Motor)
 
 ![SMARS_Top](https://user-images.githubusercontent.com/31633408/155014446-86ab87a4-6f71-417b-b213-48ac07698e6a.JPG)
 
