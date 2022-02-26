@@ -6,8 +6,6 @@ SMARS inspired RC Car using ESPNOW to transmit signals from the remote control u
 ![SMARS_Front2 (Small)](https://user-images.githubusercontent.com/31633408/154858392-5e5795cd-c237-4288-9b03-29d3a9e27979.JPG)
 
 ![SMARS_Front (Small)](https://user-images.githubusercontent.com/31633408/154858401-9d689487-f38e-4935-af7b-f4cb5bdc9f87.JPG)
-![wiring (Small)](https://user-images.githubusercontent.com/31633408/155016603-536b6cd1-c0bd-4895-ab67-b4dace29a85a.png)
-
 
 ## Credits
 This project was inspired by the SMARS arduino car described at this website:  https://www.smarsfan.com/ 
