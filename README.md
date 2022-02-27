@@ -60,6 +60,12 @@ AliExpress:
 Padding added to N20 Motors:
 ![N20Motor_wPads (Small)](https://user-images.githubusercontent.com/31633408/155830298-f5caad34-54e4-4328-8d17-270b73a4433b.png)
 
+Assemble N20 Motor to chassis and attach drive wheels:
+![DriveWheels (Small)](https://user-images.githubusercontent.com/31633408/155866001-fc10577a-08ad-44d3-bd79-233628bfd824.png)
+
+Assemble idler wheels to chassis:
+![IdlerWheels (Small)](https://user-images.githubusercontent.com/31633408/155866088-3e11dcf2-f961-4e6c-8807-f3cc159a38aa.png)
+
 
 * 9V Li-ion rechargable battery:  https://smile.amazon.com/dp/B086GTFGPP?psc=1&smid=A3P4UZIS42PRQV&ref_=chk_typ_imgToDp
 
