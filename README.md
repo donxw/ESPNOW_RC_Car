@@ -129,8 +129,9 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 
 ![SMARS_Top](https://user-images.githubusercontent.com/31633408/155014446-86ab87a4-6f71-417b-b213-48ac07698e6a.JPG)
 
-![NodeMCUmotorshield](https://user-images.githubusercontent.com/31633408/155014308-823ba2da-41f3-4c25-80e1-b46128067e5a.jpg)
+![MotorDriverBoardPinout](https://user-images.githubusercontent.com/31633408/155901710-365a457b-1200-4539-8ff0-1ae5e9ea32b3.png)
 ![wiring](https://user-images.githubusercontent.com/31633408/155016361-c054e04d-26e8-4b5f-9e44-23a4b1a1fbbe.png)
+
 
 *RC Unit - ESP32 DevModule*
 
