@@ -66,6 +66,19 @@ Assemble N20 Motor to chassis and attach drive wheels:
 Assemble idler wheels to chassis:
 ![IdlerWheels (Small)](https://user-images.githubusercontent.com/31633408/155866088-3e11dcf2-f961-4e6c-8807-f3cc159a38aa.png)
 
+Add battery door and insert 9v rechargable LiPo into the chassis:
+![AddBattery (Small)](https://user-images.githubusercontent.com/31633408/155901151-37bfc5f9-eba4-4cec-b71b-7a48230eca22.png)
+
+Add buzzer and ultrasonic sensor:
+![AddBuzzer UltrasonicSensor (Small)](https://user-images.githubusercontent.com/31633408/155901176-cd845f0d-e57d-4e06-9d21-fedb42293b11.png)
+
+Assemble NodeMCU and MotorDriverboard to the adapter:
+![AssembleCPUtoAdapter (Small)](https://user-images.githubusercontent.com/31633408/155901205-b3a74923-6b38-4f60-b036-e825a29fbecd.png)
+
+Merge CPU adapter to chassis.  Tabs on adapter board slide into the slots on the Chassis:
+![MergeCPUtoChassis (Small)](https://user-images.githubusercontent.com/31633408/155901245-38da55ac-c93b-4234-b331-28e894cc3180.png)
+
+For wiring, see below.
 
 * 9V Li-ion rechargable battery:  https://smile.amazon.com/dp/B086GTFGPP?psc=1&smid=A3P4UZIS42PRQV&ref_=chk_typ_imgToDp
 
