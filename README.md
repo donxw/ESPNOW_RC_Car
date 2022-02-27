@@ -139,6 +139,8 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 * Joystick Val Y = GPIO 32
 * Joystick Val X = GPIO 33
 * Joystick Button = GPIO 27
+* Joystick +5V = 3.3v
+* Joystick GND = GND
 
 // Battery holder
 * Battery 5v = Vin
