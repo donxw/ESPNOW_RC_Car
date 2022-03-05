@@ -151,7 +151,9 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 // Battery holder
 * Battery 5v = Vin
 
-![WiringRCTransmitter (Small)](https://user-images.githubusercontent.com/31633408/156890903-dfcb1ffd-0c78-4874-b2ec-2e2260bda1bf.png)
+![WiringRCTransmitter](https://user-images.githubusercontent.com/31633408/156891658-d15bd741-c623-428a-8ecb-e2d937791b42.png)
+
+
 
 
 
