@@ -44,7 +44,7 @@ Code recieves messages from the ESP32 and sends if forward to the motor driver t
 
 * Program the car first (ESP8266).  Run the program and note in the serial port window what the MAC Address is.  Use this in the code for the Joystick remote control code.
 * Program the remote control (ESP32).  Use the MAC address from the ESP8266.  Run the remote code and note in the serial port window the values that are being transmitted when the joystick is in the null position.
-* Go back to the car code (ESP8266) and update the joystick x and y null points, then reprogram the car.  Turn on the joystick and watch the serial port window to assure it is recieving signals.  Tweak the null points as needed so the car is quiet when the joystick is in the neutral position.  Assure the wheels react properly to forward, back, left and right joystick.
+* Go back to the car code (ESP8266) and update the joystick x and y null points (valX_center, valY_center), then reprogram the car.  Turn on the joystick and watch the serial port window to assure it is recieving signals.  Tweak the null points as needed so the car is quiet when the joystick is in the neutral position.  Assure the wheels react properly to forward, back, left and right joystick.
 
 ## Hardware Used
 ### Car:
