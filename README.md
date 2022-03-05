@@ -93,7 +93,7 @@ For wiring, see below.
 
 *NRF_RC_Case_ESP32 v12.f3z*
 
-![Remote (Small)](https://user-images.githubusercontent.com/31633408/154870419-98e65940-ab3a-4ba7-a9d4-0412f0565f24.JPG)
+![RCTransmitterCase (Small)](https://user-images.githubusercontent.com/31633408/156890848-7cf3f4e1-f651-4b78-aecb-2f8a16165dea.png)
 
 * Battery Shield - AliExpress:  https://www.aliexpress.com/item/4000770043723.html?spm=a2g0o.order_list.0.0.21ef18023Tfavs
 
@@ -144,6 +144,11 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 
 // Battery holder
 * Battery 5v = Vin
+
+![WiringRCTransmitter (Small)](https://user-images.githubusercontent.com/31633408/156890903-dfcb1ffd-0c78-4874-b2ec-2e2260bda1bf.png)
+
+### Code:
+
 
 
 # 
