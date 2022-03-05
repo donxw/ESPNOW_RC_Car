@@ -40,6 +40,12 @@ Code reads the joystick input and sends it to the car.
 Arduino board:  NodeMCU 1.0 (ESP-12E Module)
 Code recieves messages from the ESP32 and sends if forward to the motor driver to control direction and speed.  It also will beep the piezo speaker if the joystick button is pressed.  If the ultrasonic sensor detects an object in front of it, a routine backs the car up and turns it.
 
+### MAC Address and Joystick Null 
+
+* Program the car first (ESP8266).  Run the program and note in the serial port window what the MAC Address is.  Use this in the code for the Joystick remote control code.
+* Program the remote control (ESP32).  Use the MAC address from the ESP8266.  Run the remote code and note in the serial port window the values that are being transmitted when the joystick is in the null position.
+* Go back to the car code (ESP8266) and update the joystick x and y null points, then reprogram the car.  Turn on the joystick and watch the serial port window to assure it is recieving signals.  Tweak the null points as needed so the car is quiet when the joystick is in the neutral position.  Assure the wheels react properly to forward, back, left and right joystick.
+
 ## Hardware Used
 ### Car:
 
@@ -147,7 +153,6 @@ ESP32 and NodeMCU pin-outs can be found here:  https://randomnerdtutorials.com/
 
 ![WiringRCTransmitter (Small)](https://user-images.githubusercontent.com/31633408/156890903-dfcb1ffd-0c78-4874-b2ec-2e2260bda1bf.png)
 
-### Code:
 
 
 
